@@ -79,3 +79,15 @@ section h2 {
 #economy .articles article a {
     background-color: orangered;
 }
+#culture {
+    background-color: mediumpurple;
+}
+#culture .articles article a {
+    background-color: darkmagenta;
+}
+#games {
+    background-color: gray;
+}
+#games .articles article a {
+    background-color: darkgrey;
+}
