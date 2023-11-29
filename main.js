@@ -1,20 +1,19 @@
 const form = document.getElementById('form-js');
 
 function compara(campoA, campoB){
-    if (parseFloat(campoB.value) > parseFloat(campoA.value)) {
-        return false;
+    if (parseFloat(campoB) > parseFloat(campoA)) {
+    return alert("O FORMULÁRIO É INVÁLIDO");
     } else {
-        return true;
+    return alert("O FORMULÁRIO É VÁLIDO");
     }
 }
 
 form.addEventListener('submit', function(e){
     e.preventDefault();
+    let campoA = document.getElementById('campo-a');
+    let campoB = document.getElementById('campo-b');
+
+    let formvalid = compara(campoA, campoB);
 })
-
-let campoA = document.getElementById('campo-a');
-let campoB = document.getElementById('campo-b');
-
-let formvalid = compara(campoA.value, campoB.value);
 
 console.log(form);
