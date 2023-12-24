@@ -10,7 +10,7 @@ $(document).ready(function() {
     $('#nova-tarefa').val()
 
     $(novaTarefa).click(function() {
-        $('ul').toggleClass('completed');
+        $(this).toggleClass('completed');
 
     })
 })
