@@ -5,11 +5,13 @@ $(document).ready(function() {
     e.preventDefault();
     const nomeTarefa = $('#nova-tarefa').val();
     const novaTarefa = $('<li></li>');
-    $(`<ul>${nomeTarefa}</ul>`).appendTo(novaTarefa);
+    $(`<li>${nomeTarefa}</li>`).appendTo(novaTarefa);
     $(novaTarefa).appendTo('ul');
-    $('#nova-tarefa').val('')
+    $('#nova-tarefa').val()
+
+    $(novaTarefa).click(function() {
+        $('ul').toggleClass('completed');
 
     })
 })
-
-
+})
