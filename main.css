@@ -5,10 +5,6 @@
     font-family: 'Roboto', sans-serif;
 }
 
-body {
-    background-color: lightgray;
-}
-
 header {
     background-color: black;
     color: #fff;
@@ -79,15 +75,18 @@ section p {
     height: 300px;
 }
 
-.produtos ul{
+.lista {
     display: flex;
-    margin: 16px;
+    margin: 0 auto;
+    max-width: 1280px;
+    width: 100%;
+    padding: 16px;
+    justify-content: space-between;
 }
 
 .produtos li {
 list-style: none;
-max-width: 25%;
-margin: 16px 0;
+margin: 0 auto;
 }
 
 .produtos li img {
@@ -95,9 +94,6 @@ margin: 16px 0;
     height: 200px;
 }
 
-.produtos {
-display: grid;
-}
 
 
 
