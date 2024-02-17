@@ -87,6 +87,12 @@ section p {
 .produtos li {
 list-style: none;
 margin: 0 auto;
+margin-bottom: 20px;
+width: 25%;
+text-align: center;
+padding: 20px;
+box-sizing: border-box;
+justify-content: space-between;
 }
 
 .produtos li img {
@@ -94,6 +100,67 @@ margin: 0 auto;
     height: 200px;
 }
 
+.produtos li button {
+    display: block;
+    width: 100%;
+    padding: 8px 0;
+    border: none;
+    background-color: black;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+}
 
+@media screen and (max-width: 641px) {
+    .container {
+        max-width: 90%;
+    }
 
+    header {
+        justify-content: space-between;
+        display: flex;
+        align-items: center;
+    }
 
+    .container, .sobre {
+        max-width: 1280px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    header .container,
+section .sobre {
+    justify-content: space-between;
+    display: block;
+    align-items: center;
+}
+
+section .sobre {
+    align-items: flex-start;
+}
+ 
+section {
+    padding: 24px 0;
+}
+
+section h2 {
+    margin-bottom: 24px;
+    border-bottom: 2px solid black;
+    padding: 16px;
+    font-style: italic;
+}
+
+.sobre img {
+    height: 300px;
+    margin: 0;
+    width: 100%;
+}
+.lista {
+    display: block;
+}
+
+header .container {
+ display: flex;
+
+}
+}
