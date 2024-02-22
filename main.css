@@ -111,28 +111,28 @@ justify-content: space-between;
     font-weight: bold;
 }
 
-@media screen and (max-width: 641px) {
-    .container {
+@media screen and (max-width: 640px) {
+    .conteudo {
         max-width: 90%;
     }
 
     header {
         justify-content: space-between;
-        display: flex;
+        display: block;
         align-items: center;
     }
 
-    .container, .sobre {
+    .sobre {
         max-width: 1280px;
         width: 100%;
         margin: 0 auto;
     }
 
-    header .container,
 section .sobre {
     justify-content: space-between;
     display: block;
     align-items: center;
+    padding: 16px;
 }
 
 section .sobre {
@@ -154,13 +154,83 @@ section h2 {
     height: 300px;
     margin: 0;
     width: 100%;
+    padding: 16px;
 }
-.lista {
+.produtos {
+    padding: 16px;
+}
+
+.produtos .lista {
     display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
-header .container {
- display: flex;
-
 }
+
+@media  screen and (min-width: 641px) and (max-width: 1024px) {
+    .conteudo {
+        max-width: 90%;
+    }
+
+    header {
+        justify-content: space-between;
+        display: block;
+        align-items: center;
+    }
+
+    header nav li {
+        display: block;
+        margin-left: 16px;
+        font-weight: bold;
+    }
+
+    .sobre {
+        max-width: 1280px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+section .sobre {
+    justify-content: space-between;
+    display: block;
+    align-items: center;
+    padding: 16px;
+}
+
+section .sobre {
+    align-items: flex-start;
+}
+ 
+section {
+    padding: 24px 0;
+}
+
+section h2 {
+    margin-bottom: 24px;
+    border-bottom: 2px solid black;
+    padding: 16px;
+    font-style: italic;
+}
+
+.sobre img {
+    height: 300px;
+    margin: 0;
+    padding: 16px;
+    width: 100%;
+}
+
+
+.produtos {
+    padding: 16px;
+}
+.produtos .lista {
+   display: grid;
+   grid-template-columns: repeat(2, 49%);
+}
+
+
+
+    
 }
