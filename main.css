@@ -160,6 +160,10 @@ section h2 {
     padding: 16px;
 }
 
+.produtos li {
+    width: 100%;
+}
+
 .produtos .lista {
     display: block;
     justify-content: center;
@@ -224,6 +228,10 @@ section h2 {
 
 .produtos {
     padding: 16px;
+}
+
+.produtos li {
+    width: 100%;
 }
 .produtos .lista {
    display: grid;
